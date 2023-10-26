@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger-menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <nav class="nav">
+                <a class="company-logo" href="#">Logo</a>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <!-- aria-expanded="false" Для читалок, доступніст, вказує що меню закрито/ відкрито -->
+                <!-- aria-controls="menu-container" Для читалок, доступніст, зв'язує з меню -->
+                    <svg width="40" height="40" aria-label="menu-button swich">
+                        <!-- aria-label="menu-button swich" Для читалок, доступніст,буде прочитано вміст aria-label -->
+                        <use class="icon-nav" href="./img/icons-second.svg#icon-nav"></use>
+                        <use class="icon-close" href="./img/icons-second.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>Content menu</div>
+            </nav>
+            <main></main>
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
