@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <button type="button" data-open-modal>Open</button>
+        </div>
+        <section>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quisquam dolorum temporibus perspiciatis distinctio, optio ea, velit dolor ipsa, pariatur atque exercitationem officiis aut voluptatibus nulla iure facilis fugiat officia.</p>
+            </div>
+        </section>
+    </main>
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" data-close-modal>Close</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, placeat quaerat! Suscipit commodi doloremque non consectetur dicta autem adipisci minima amet quam consequatur facilis minus voluptatum veniam neque, tenetur voluptate ipsam nemo consequuntur velit quas repellat deserunt modi saepe quaerat. Praesentium, voluptas possimus minus magnam laudantium odit doloremque! Sequi, ut.</p>
+    </div>
+   </div>    
+   <script src="./js/moda.js"></script>
+</body>
+</html>
